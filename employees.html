@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Seashell</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+<!--    <link href="css/styles.css" rel="stylesheet">-->
+
+    <!-- font icon -->
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="css/bs_leftnavi.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- /font icon -->
+
+  </head>
+
+  <body>
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SEASHELL</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Info <!--<span class="caret"></span>--></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Job</a></li>
+                <li><a href="#">Training</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">DOCUMENTS</li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Shared</a></li>
+                <li><a href="#">Personal</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attendance <!--<span class="caret"></span>--></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My Attendance</a></li>
+                <li><a href="#">Dept. Attendance</a></li>
+                <li><a href="#">Time Off</a></li>
+                <li><a href="#">Ammend Request</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">MY REPORTS</li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Overtime</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Benefits <!--<span class="caret"></span>--></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Credits</a></li>
+
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown" ><a href="../navbar/" style="margin-right:0;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="pe-7s-keypad pe-lg"></i><!--<span class="badge" style="font-size:10px;" >5</span>--></a>
+              <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                  <table>
+                      <tbody>
+                          <tr>
+                          <td><a href=""><i class="pe-7s-users pe-3x"></i> <h5>Contacts</h5></a></td>
+                              <td><a href=""><i class="pe-7s-portfolio pe-3x"></i> <h5>Projects</h5></a></td>
+                              <td><a href=""><i class="pe-7s-note pe-3x"></i> <h5>Tasks</h5></a>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td><a href=""><i class="pe-7s-date pe-3x"></i> <h5>Calendar</h5></a></td>
+                              <td><a href=""><i class="pe-7s-comment pe-3x"></i> <h5>Teams</h5></a></td>
+                              <td><a href=""><i class="pe-7s-coffee pe-3x"></i> <h5>Time Off</h5></a>
+                          </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </li>
+           <li><a href="../navbar/" style="margin-right:0;"><i class="pe-7s-mail pe-lg"></i><!--<span class="badge" style="font-size:10px;" >5</span>--></a></li>
+            <li ><a href="../navbar/" style="margin-right:0;"><i class="pe-7s-bell pe-lg"></i><!--<span class="badge" style="font-size:10px;" >5</span>--></a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="pe-7s-user pe-lg"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="pe-7s-id"></i> Profile</a></li>
+                <li><a href="#"><i class="pe-7s-config"></i> Settings </a></li>
+                <li><a href="#"><i class="pe-7s-upload pe-rotate-90"></i> Logout</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div class="row">
+          <div class="col-xs-12 placeholder">
+            <p style="text-align:right;font-size:16px;color:#ccc;padding:0;"><a href="" class="text-muted"><i class="fa fa-caret-square-o-right"></i></a></p>
+              <div class="user-img">
+                  <a href="" data-toggle="modal" data-target=".profile-img-modal-sm">
+                    <!-- <img class="img-responsive" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="70" height="70" /></a> -->
+                    <img class="img-responsive" src="images/fmax.jpg" width="100" height="100" /></a>
+
+                    <!-- <img src="images/fmax.jpg" /> -->
+              </div>
+              <!-- <span class="text-muted">Something else</span> -->
+              <h7><a href="">Hussain Mohamed</a>, </h7>
+
+
+
+
+
+              <!-- modal -->
+
+              <!-- / modal -->
+
+
+
+              <p><a href="">Executive</a>,  <a href="">Sales & Marketing</a></p>
+
+            </div>
+          </div>
+
+          <!-- left nav -->
+          <div class="row">
+            <div class="col-sm-12 nav-pad">
+          <div class="gw-sidebar">
+            <div id="gw-sidebar" class="gw-sidebar">
+              <div class="nano-content">
+                <ul class="gw-nav gw-nav-list">
+                  <!-- <li class="init-un-active"> <a href="javascript:void(0)"> <span class="gw-menu-text">Navigation Menu</span> </a> </li> -->
+                  <li > <a href="javascript:void(0)"> <span class="gw-menu-text"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</span> <b class="gw-arrow"></b> </a>
+                    <!-- <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Messeges</a> </li>
+                    </ul> -->
+                  </li>
+                  <li class="init-arrow-down"> <a href="javascript:void(0)"> <span class="gw-menu-text"><i class="fa fa-clock-o" aria-hidden="true"></i> Attendance</span> <b class="gw-arrow icon-arrow-up8"></b> </a>
+                    <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Current</a> </li>
+                      <li> <a href="javascript:void(0)">Overtime</a> </li>
+                      <li> <a href="javascript:void(0)">Section</a> </li>
+                    </ul>
+                  </li>
+                  <li class="init-arrow-down"> <a href="javascript:void(0)"> <span class="gw-menu-text"><i class="fa fa-calendar" aria-hidden="true"></i> Leave</span> <b></b> </a>
+                    <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Annula Leave</a> </li>
+                      <li> <a href="javascript:void(0)">Emergency Leave</a> </li>
+                      <li> <a href="javascript:void(0)">Family Leave</a> </li>
+                    </ul>
+                  </li>
+                  <li class="init-arrow-down"> <a href="javascript:void(0)"> <span class="gw-menu-text"> <i class="fa fa-university" aria-hidden="true"></i> Loans</span> <b></b> </a>
+                    <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Staff Loan</a> </li>
+                      <li> <a href="javascript:void(0)">MFCS</a> </li>
+                      <li> <a href="javascript:void(0)">Bank of Maldives</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- left nav end -->
+          <!-- <div class="col-xs-12 placeholder">
+             <div class="user-img">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="85" height="" class="img-fluid">
+              </div>
+              <h6>Abdul Abdul Kareem</h6>
+              <p><i>Marketing Exec.</i></p>
+            </div> -->
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- page breadcrumb -->
+            <div class="row hidden-sm hidden-xs">
+             <div class="col-sm-12 col-md-12">
+
+                     <ol class="breadcrumb" >
+                      <li><a href="#">Home</a></li>
+                      <li class="active"><a href="#" >Employees</a></li>
+                     </ol>
+             </div>
+            </div>
+             <!-- /.page breadcrumb -->
+             <div class="row hidden-sm hidden-xs">
+               <div class="col-sm-12 col-md-12">
+                 <h4 class="t-zero">Employees <small> /400 </small></h4>
+               </div>
+               <!-- <div class="col-sm-4 col-md-8" style="text-align:right;">
+                 2
+               </div> -->
+             </div>
+           <!-- filter box -->
+             <div class="row">
+             <div class="col-sm-4 col-md-4">
+               <form>
+                <div class="form-group emp-filter-f">
+                  <input type="text" class="form-control" id="search-filter">
+                </div>
+              </form>
+             </div>
+           <!-- filter box end -->
+           <!-- filter by -->
+             <div class="col-sm-8 col-md-8 txt-right hidden-sm hidden-xs">
+               <div class="btn-group">
+                <a href="employees.html" class="btn btn-default active"> <i class="fa fa-list" aria-hidden="true"></i> </a>
+                <a href="emp-box.html" class="btn btn-default"> <i class="fa fa-th" aria-hidden="true"></i></a>
+                <a href="" class="btn btn-default"><i class="fa fa-sitemap" aria-hidden="true"></i></a>
+                <a href="" class="btn btn-default"> <i class="fa fa-filter" aria-hidden="true"></i></a>
+              </div>
+             </div>
+             <!-- filter by end -->
+           </div>
+
+
+           <div class="panel panel-default hidden-sm hidden-xs">
+ <!--              <div class="panel-heading">Panel heading without title</div>-->
+               <div class="panel-body">
+                 <!-- employee table -->
+               <div class="row" ><!-- could hide for small screens -->
+                 <div class="col-sm-12 col-sm-12">
+                   <!--
+                   photo, emp id | name, post, section, contact, email
+                   some fields are based on employee rights
+                   *** each record a row. load time :( ***
+                 -->
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/fmax.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="t-zero">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                        <p class="tb-zero">In Office: Yes,</p>
+                        <p class="tb-zero">Supervisor for: 10 Staff</p>
+                        <p class="tb-zero">Year of Service: 5</p>
+
+                     </div>
+
+
+                   </div>
+                   <hr/>
+
+
+
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/fmax.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">In Office: Yes,</p>
+                       <p class="tb-zero">Supervisor for: 10 Staff</p>
+                       <p class="tb-zero">Year of Service: 5</p>
+                     </div>
+
+
+                   </div>
+                   <hr/>
+
+
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/10321-1.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">In Office: Yes,</p>
+                       <p class="tb-zero">Supervisor for: 10 Staff</p>
+                       <p class="tb-zero">Year of Service: 5</p>
+                     </div>
+
+
+                   </div>
+                  <hr/>
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/10321-1.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">In Office: Yes,</p>
+                       <p class="tb-zero">Supervisor for: 10 Staff</p>
+                       <p class="tb-zero">Year of Service: 5</p>
+                     </div>
+
+
+                   </div>
+                  <hr/>
+
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/10321-1.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">In Office: Yes,</p>
+                       <p class="tb-zero">Supervisor for: 10 Staff</p>
+                       <p class="tb-zero">Year of Service: 5</p>
+                     </div>
+
+
+                   </div>
+                   <hr/>
+
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/10321-1.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">In Office: Yes,</p>
+                       <p class="tb-zero">Supervisor for: 10 Staff</p>
+                       <p class="tb-zero">Year of Service: 5</p>
+                     </div>
+
+
+                   </div>
+                   <hr/>
+
+                   <div class="row">
+                     <div class="col-sm-2 emp-list-pic"><img src="images/10321-1.jpg" /></div>
+                     <div class="col-sm-4"><h5 class="">Hussain Ahmed Falah Manik / <small>112</small></h5>
+                       <p class="tb-zero">Assistance Director General</p>
+                       <p class="tb-zero">Human Resource Dept.</p>
+                       <p class="tb-zero">Email: hussain@domain.com</p>
+                       <p class="tb-zero">Personal Email: hidden</p>
+
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="">Office: +960 7774546, ext. 132</p>
+                       <p class="tb-zero">Home: +960 3324394</p>
+                       <p class="tb-zero">Mob: +960 9994999</p>
+                       <p class="tb-zero">Facebook: hidden</p>
+                       <p class="tb-zero">twitter: hidden</p>
+                     </div>
+                     <div class="col-sm-3">
+                       <p class="tb-zero">In Office: Yes,</p>
+                       <p class="tb-zero">Supervisor for: 10 Staff</p>
+                       <p class="tb-zero">Year of Service: 5</p>
+                     </div>
+
+
+                   </div>
+
+                 </div>
+               </div>
+
+             </div><!-- panel body end -->
+           </div><!-- panel end -->
+           <!-- employee table end -->
+           <!-- for small screen-->
+           <div class="row hidden-lg hidden-md hidden-xl">
+               <div class="col-sm-12 col-xs-12">
+                 <div class="panel panel-default">
+                  <div class="panel-body">
+                   <div class="card emp-list-pic" style="text-align:center;">
+                      <img class="card-img-top" src="images/fmax.jpg"  alt="Card image cap" />
+                      <div class="card-block">
+                        <h5 class="card-title b-zero">Hussain Mohamed Ali Manik</h5>
+                        <p class="card-text text-muted t-zero">Sales & Marketing</p>
+                        <h4 class="card-text t-zero"><i class="fa fa-address-card-o"></i> 1324</h4>
+                      </div>
+                      <div class="card-footer">
+                        <p class="card-text tb-zero"><i class="fa fa-phone"></i> 3323 289 </i> / <i class="fa fa-mobile"></i> 778 9285</p>
+                        <p class="card-text tb-zero"><i class="fa fa-envelope-o"></i> email@domain.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                 <div class="panel-body">
+                  <div class="card emp-list-pic" style="text-align:center;">
+                     <img class="card-img-top" src="images/fmax.jpg"  alt="Card image cap" />
+                     <div class="card-block">
+                       <h5 class="card-title b-zero">Hussain Mohamed Ali Manik</h5>
+                       <p class="card-text text-muted t-zero">Sales & Marketing</p>
+                       <h4 class="card-text t-zero"><i class="fa fa-address-card-o"></i> 1324</h4>
+                     </div>
+                     <div class="card-footer">
+                       <p class="card-text tb-zero"><i class="fa fa-phone"></i> 3323 289 </i> / <i class="fa fa-mobile"></i> 778 9285</p>
+                       <p class="card-text tb-zero"><i class="fa fa-envelope-o"></i> email@domain.com</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col-sm-12 col-xs-12">
+               <div class="panel panel-default">
+                <div class="panel-body">
+                 <div class="card emp-list-pic" style="text-align:center;">
+                    <img class="card-img-top" src="images/fmax.jpg"  alt="Card image cap" />
+                    <div class="card-block">
+                      <h5 class="card-title b-zero">Hussain Mohamed Ali Manik</h5>
+                      <p class="card-text text-muted t-zero">Sales & Marketing</p>
+                      <h4 class="card-text t-zero"><i class="fa fa-address-card-o"></i> 1324</h4>
+                    </div>
+                    <div class="card-footer">
+                      <p class="card-text tb-zero"><i class="fa fa-phone"></i> 3323 289 </i> / <i class="fa fa-mobile"></i> 778 9285</p>
+                      <p class="card-text tb-zero"><i class="fa fa-envelope-o"></i> email@domain.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-xs-12">
+              <div class="panel panel-default">
+               <div class="panel-body">
+                <div class="card emp-list-pic" style="text-align:center;">
+                   <img class="card-img-top" src="images/fmax.jpg"  alt="Card image cap" />
+                   <div class="card-block">
+                     <h5 class="card-title b-zero">Hussain Mohamed Ali Manik</h5>
+                     <p class="card-text text-muted t-zero">Sales & Marketing</p>
+                     <h4 class="card-text t-zero"><i class="fa fa-address-card-o"></i> 1324</h4>
+                   </div>
+                   <div class="card-footer">
+                     <p class="card-text tb-zero"><i class="fa fa-phone"></i> 3323 289 </i> / <i class="fa fa-mobile"></i> 778 9285</p>
+                     <p class="card-text tb-zero"><i class="fa fa-envelope-o"></i> email@domain.com</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            </div>
+            <!-- end small screen -->
+        </div>
+      </div>
+    </div>
+    <footer class="bd-footer text-muted">
+
+      <div class="container">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+        <ul class="bd-footer-links">
+          <li>Ministery Of Web Development </li>
+          <li>H. Twitwin Tower, 20932 </li>
+        </ul>
+        <p>this footer ok</p>
+        <p>this footer not ok</p>
+      </div>
+    </div>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bs_leftnavi.js"></script>
+
+  </body>
+
+</html>

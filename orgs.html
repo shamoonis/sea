@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Seashell</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+<!--    <link href="css/styles.css" rel="stylesheet">-->
+
+    <!-- font icon -->
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="css/bs_leftnavi.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- /font icon -->
+
+  </head>
+
+  <body>
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SEASHELL</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Info <!--<span class="caret"></span>--></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Job</a></li>
+                <li><a href="#">Training</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">DOCUMENTS</li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Shared</a></li>
+                <li><a href="#">Personal</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attendance <!--<span class="caret"></span>--></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My Attendance</a></li>
+                <li><a href="#">Dept. Attendance</a></li>
+                <li><a href="#">Time Off</a></li>
+                <li><a href="#">Ammend Request</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">MY REPORTS</li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Overtime</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Benefits <!--<span class="caret"></span>--></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Credits</a></li>
+
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown" ><a href="../navbar/" style="margin-right:0;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="pe-7s-keypad pe-lg"></i><!--<span class="badge" style="font-size:10px;" >5</span>--></a>
+              <div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                  <table>
+                      <tbody>
+                          <tr>
+                          <td><a href=""><i class="pe-7s-users pe-3x"></i> <h5>Contacts</h5></a></td>
+                              <td><a href=""><i class="pe-7s-portfolio pe-3x"></i> <h5>Projects</h5></a></td>
+                              <td><a href=""><i class="pe-7s-note pe-3x"></i> <h5>Tasks</h5></a>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td><a href=""><i class="pe-7s-date pe-3x"></i> <h5>Calendar</h5></a></td>
+                              <td><a href=""><i class="pe-7s-comment pe-3x"></i> <h5>Teams</h5></a></td>
+                              <td><a href=""><i class="pe-7s-coffee pe-3x"></i> <h5>Time Off</h5></a>
+                          </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </li>
+           <li><a href="../navbar/" style="margin-right:0;"><i class="pe-7s-mail pe-lg"></i><!--<span class="badge" style="font-size:10px;" >5</span>--></a></li>
+            <li ><a href="../navbar/" style="margin-right:0;"><i class="pe-7s-bell pe-lg"></i><!--<span class="badge" style="font-size:10px;" >5</span>--></a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="pe-7s-user pe-lg"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="pe-7s-id"></i> Profile</a></li>
+                <li><a href="#"><i class="pe-7s-config"></i> Settings </a></li>
+                <li><a href="#"><i class="pe-7s-upload pe-rotate-90"></i> Logout</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div class="row">
+          <div class="col-xs-12 placeholder">
+            <p style="text-align:right;font-size:16px;color:#ccc;padding:0;"><a href="" class="text-muted"><i class="fa fa-caret-square-o-right"></i></a></p>
+              <div class="user-img">
+                  <a href="" data-toggle="modal" data-target=".profile-img-modal-sm">
+                    <!-- <img class="img-responsive" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="70" height="70" /></a> -->
+                    <img class="img-responsive" src="images/fmax.jpg" width="100" height="100" /></a>
+
+                    <!-- <img src="images/fmax.jpg" /> -->
+              </div>
+              <!-- <span class="text-muted">Something else</span> -->
+              <h7><a href="">Hussain Mohamed</a>, </h7>
+
+
+
+
+
+              <!-- modal -->
+
+              <!-- / modal -->
+
+
+
+              <p><a href="">Executive</a>,  <a href="">Sales & Marketing</a></p>
+
+            </div>
+          </div>
+
+          <!-- left nav -->
+          <div class="row">
+            <div class="col-sm-12 nav-pad">
+          <div class="gw-sidebar">
+            <div id="gw-sidebar" class="gw-sidebar">
+              <div class="nano-content">
+                <ul class="gw-nav gw-nav-list">
+                  <!-- <li class="init-un-active"> <a href="javascript:void(0)"> <span class="gw-menu-text">Navigation Menu</span> </a> </li> -->
+                  <li > <a href="javascript:void(0)"> <span class="gw-menu-text"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</span> <b class="gw-arrow"></b> </a>
+                    <!-- <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Messeges</a> </li>
+                    </ul> -->
+                  </li>
+                  <li class="init-arrow-down"> <a href="javascript:void(0)"> <span class="gw-menu-text"><i class="fa fa-clock-o" aria-hidden="true"></i> Attendance</span> <b class="gw-arrow icon-arrow-up8"></b> </a>
+                    <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Current</a> </li>
+                      <li> <a href="javascript:void(0)">Overtime</a> </li>
+                      <li> <a href="javascript:void(0)">Section</a> </li>
+                    </ul>
+                  </li>
+                  <li class="init-arrow-down"> <a href="javascript:void(0)"> <span class="gw-menu-text"><i class="fa fa-calendar" aria-hidden="true"></i> Leave</span> <b></b> </a>
+                    <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Annula Leave</a> </li>
+                      <li> <a href="javascript:void(0)">Emergency Leave</a> </li>
+                      <li> <a href="javascript:void(0)">Family Leave</a> </li>
+                    </ul>
+                  </li>
+                  <li class="init-arrow-down"> <a href="javascript:void(0)"> <span class="gw-menu-text"> <i class="fa fa-university" aria-hidden="true"></i> Loans</span> <b></b> </a>
+                    <ul class="gw-submenu">
+                      <li> <a href="javascript:void(0)">Staff Loan</a> </li>
+                      <li> <a href="javascript:void(0)">MFCS</a> </li>
+                      <li> <a href="javascript:void(0)">Bank of Maldives</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- left nav end -->
+          <!-- <div class="col-xs-12 placeholder">
+             <div class="user-img">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="85" height="" class="img-fluid">
+              </div>
+              <h6>Abdul Abdul Kareem</h6>
+              <p><i>Marketing Exec.</i></p>
+            </div> -->
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- page breadcrumb -->
+            <div class="row">
+             <div class="col-sm-12 col-md-12">
+
+                     <ol class="breadcrumb" >
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Home</a></li>
+                      <li class="active"><a href="#" >Organizations</a></li>
+                     </ol>
+             </div>
+            </div>
+             <!-- /.page breadcrumb -->
+             <div class="row">
+               <div class="col-sm-12 col-md-12">
+                 <h4 class="t-zero">Organizations <small> /10 </small></h4>
+               </div>
+             </div>
+             <div class="row hidden-sm hidden-xs"><!-- page header row -->
+             <div class="col-sm-4 col-md-4"><!-- to add new record -->
+               <button class="btn btn-primary" ><i class="fa fa-plus" aria-hidden="true"> </i> Add New Record </button>
+             </div>
+             <div class="col-sm-3 col-md-3"><!-- maybe required later -->
+             </div>
+              <!-- filter box -->
+             <div class="col-sm-3 col-md-3 txt-right">
+               <form class="txt-right">
+                <div class="form-group emp-filter-f">
+                  <input type="text" class="form-control" id="search-filter">
+                </div>
+              </form>
+            </div><!-- end filter box -->
+            <!-- for grp button less button if not more space required -->
+            <div class="col-sm-2 col-md-2 txt-right">
+              <div class="dropdown"><!-- dropdown works here as a grp needs some attention-->
+               <div class="btn-group txt-right">
+                <a href="" title="make excel" class="btn btn-default"> <i class="fa fa-file-excel-o" aria-hidden="true"></i></a>
+                <a href="" title="make pdf" class="btn btn-default"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                <a href="" id="dLabel" class="btn btn-default" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-gear" aria-hidden="true"></i>
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                  <li><a href="">Edit Table View </a></li>
+                  <li><a href="">Add Table Fields  </a> </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <!-- button grp end -->
+           </div>
+           <!-- page header row end -->
+           <!-- page header row for small screens
+            ea will have 12 col i.e. 1 col
+           -->
+           <div class="row hidden-md hidden-lg hidden-xl">
+             <div class="col-sm-12 col-xsm-12">
+
+               <div class="form-group emp-filter-f">
+                 <input type="text" class="form-control" id="search-filter">
+               </div>
+
+               <div class="row">
+                 <div class="col-sm-12 col-xs-12 txt-center" style="margin-bottom:14px;">
+                   <button class="btn btn-lg btn-block btn-primary" role="button"> Add New Record </button>
+                 </div>
+                </div>
+                <!-- <div class="row">
+                 <div class="col-sm-12 col-xs-12 txt-center">
+                   <button class="btn btn-lg btn-block btn-default" > Edit Table View </button>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-sm-12 col-xs-12 txt-center">
+                   <button class="btn btn-lg btn-block btn-default" > Add Table Field </button>
+                 </div>
+               </div> -->
+             </div>
+           </div>
+           <div class="panel panel-default table-responsive hidden-xs hidden-sm">
+               <div class="panel-body">
+                 <!-- employee table -->
+               <div class="row" ><!-- could hide for small screens -->
+                 <div class="col-sm-12 col-sm-12">
+                   <table class="table" style="border-top:none;">
+                     <thead>
+                       <tr>
+                         <th>#</th>
+                         <th>Name</th>
+                         <th>Reg. #</th>
+                         <th>Reg. Date</th>
+                         <th>TIN #</th>
+                         <th>Country</th>
+                         <th>Type</th>
+                         <th>Status</th>
+                         <th>&nbsp;</th>
+                         <th>&nbsp;</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <th scope="row">1</th>
+                         <td>Twister Private Limited</td>
+                         <td>C1234 / 1999</td>
+                         <td>13 January, 1999</td>
+                         <td>1431453001GST</td>
+                         <td>Maldives</td>
+                         <td>Travel & Tourism</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+                       </tr>
+                       <tr>
+                         <th scope="row">2</th>
+                         <td>Acrylic Maldives Pvt. Ltd.</td>
+                         <td>C3421 / 2001</td>
+                         <td>13 January, 1999</td>
+                         <td>1431453001GST</td>
+                         <td>Maldives</td>
+                         <td>Import & Export</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+                       </tr>
+                       <tr>
+                         <th scope="row">3</th>
+                         <td>Twister Private Limited</td>
+                         <td>C1234 / 1999</td>
+                         <td>13 January, 1999</td>
+                         <td>1431453001GST</td>
+                         <td>Maldives</td>
+                         <td>Travel & Tourism</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+                       </tr>
+                       <tr>
+                         <th scope="row">4</th>
+                         <td>Fair Investment Maldives Pvt. Ltd.</td>
+                         <td>C1834 / 1998</td>
+                         <td>13 January, 1998</td>
+                         <td>1431453001GST</td>
+                         <td>Maldives</td>
+                         <td>Whole Sales & Retail</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+                       </tr>
+                       <tr>
+                         <th scope="row">5</th>
+                         <td>Blue Wave Pvt. Ltd.</td>
+                         <td>C2934 / 2008</td>
+                         <td>23 May, 2008</td>
+                         <td>1431853001GST</td>
+                         <td>Maldives</td>
+                         <td>Travel & Tourism</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+                       </tr>
+                       <tr>
+                         <th scope="row">6</th>
+                         <td>Adyson Pvt. Ltd.</td>
+                         <td>C1974 / 2015</td>
+                         <td>11 June, 2015</td>
+                         <td>1541453001GST</td>
+                         <td>Maldives</td>
+                         <td>Cafe' & Restaurant</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+                       </tr>
+                       <tr>
+                         <th scope="row">7</th>
+                         <td>Empower Maldives Pvt. Ltd.</td>
+                         <td>C1634 / 2016</td>
+                         <td>10 December, 2016</td>
+                         <td>1483453001GST</td>
+                         <td>Maldives</td>
+                         <td>Employment</td>
+                         <td>Active</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+
+                     </tbody>
+                   </table>
+
+                 </div>
+               </div>
+             </div><!-- panel body end -->
+           </div><!-- panel end -->
+
+           <div class="panel panel-default table-responsive hidden-md hidden-lg">
+               <div class="panel-body">
+                 <!-- employee table -->
+               <div class="row"><!-- could hide for small screens -->
+                 <div class="col-sm-12 col-sm-12 ">
+                   <table class="table">
+                     <thead>
+                       <tr>
+                         <th>#</th>
+                         <th>Name</th>
+                         <th>Reg. #</th>
+                         <th>Reg. Date</th>
+                         <th>&nbsp;</th>
+                         <th>&nbsp;</th>
+
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <th scope="row">1</th>
+                         <td>Twister Private Limited</td>
+                         <td>C1234 / 1999</td>
+                         <td>13 January, 1999</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+                       <tr>
+                         <th scope="row">2</th>
+                         <td>Acrylic Maldives Pvt. Ltd.</td>
+                         <td>C3421 / 2001</td>
+                         <td>13 January, 1999</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+                       <tr>
+                         <th scope="row">3</th>
+                         <td>Twister Private Limited</td>
+                         <td>C1234 / 1999</td>
+                         <td>13 January, 1999</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+                       <tr>
+                         <th scope="row">4</th>
+                         <td>Fair Investment Maldives Pvt. Ltd.</td>
+                         <td>C1834 / 1998</td>
+                         <td>13 January, 1998</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+                       <tr>
+                         <th scope="row">5</th>
+                         <td>Blue Wave Pvt. Ltd.</td>
+                         <td>C2934 / 2008</td>
+                         <td>23 May, 2008</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+                       <tr>
+                         <th scope="row">6</th>
+                         <td>Adyson Pvt. Ltd.</td>
+                         <td>C1974 / 2015</td>
+                         <td>11 June, 2015</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+                       </tr>
+                       <tr>
+                         <th scope="row">7</th>
+                         <td>Empower Maldives Pvt. Ltd.</td>
+                         <td>C1634 / 2016</td>
+                         <td>10 December, 2016</td>
+                         <td><i class="fa fa-pencil-square-o"> </i></td>
+                         <td><i class="fa fa-remove"> </i></td>
+
+
+                       </tr>
+
+                     </tbody>
+                   </table>
+
+                 </div>
+               </div>
+             </div><!-- panel body end -->
+           </div><!-- panel end -->
+
+        </div>
+      </div>
+    </div>
+    <footer class="bd-footer text-muted">
+
+      <div class="container">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+        <ul class="bd-footer-links">
+          <li>Ministery Of Web Development </li>
+          <li>H. Twitwin Tower, 20932 </li>
+        </ul>
+        <p>this footer ok</p>
+        <p>this footer not ok</p>
+      </div>
+    </div>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bs_leftnavi.js"></script>
+
+  </body>
+
+</html>
